@@ -1,7 +1,5 @@
-package Home_Work1._task_4;
-
+package Home_Work1;
 import java.util.Scanner;
-
 public class task_4_1 {
     public static void main(String[] args) {
         int a;
@@ -10,8 +8,7 @@ public class task_4_1 {
         a = sc.nextInt();
         if (a%2 == 0) {
             System.out.println("Введённое число - четное");
-        }
-        else {
+        } else {
             System.out.println("Введенное число - нечетное");
         }
     }

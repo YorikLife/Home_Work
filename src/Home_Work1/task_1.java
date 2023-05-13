@@ -16,6 +16,5 @@ public class task_1 {
                 int result2 = a | b; // 15 = результат перевода в побитовое значение оператора | (OR) = 47 = 00101111
                 System.out.println(result2);
         in.close();
-
     }
 }

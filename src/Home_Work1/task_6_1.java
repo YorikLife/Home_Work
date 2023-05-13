@@ -1,4 +1,4 @@
-package Home_Work1._task_6;
+package Home_Work1;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -12,6 +12,6 @@ public class task_6_1 {
         }else {
             System.out.println("Здраствуйте, а вы кто ??? ");
         }
-        }
     }
+}
 

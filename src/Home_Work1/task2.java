@@ -1,4 +1,4 @@
-package Home_Work1.task_2;
+package Home_Work1;
 
 public class task2 {
     public static void main(String[] args) {
@@ -41,6 +41,5 @@ public class task2 {
         System.out.println("пример 2.8 = "+ result11);
         boolean result12 = true && false;
         System.out.println("пример 2.9 = "+ result12);// Если одно из значений false - то общее значение - false.
-
     }
 }

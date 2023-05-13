@@ -1,4 +1,4 @@
-package Home_Work1._task_4;
+package Home_Work1;
 import java.util.Scanner;
 public class task_4_3 {
     public static void main(String[] args) {
@@ -7,9 +7,7 @@ public class task_4_3 {
         Scanner keyboard = new Scanner(System.in);
         x = keyboard.nextInt();
         y = keyboard.nextInt();
-
         if ((x%y)==0) {System.out.println(x+ " Делится на " + y);}
         else {  System.out.println(x+ " Не делится на " + y); }
-
     }
 }

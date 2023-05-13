@@ -1,5 +1,4 @@
-package Home_Work1._task_4;
-
+package Home_Work1;
 public class task_4_2 {
     public static void main(String[] args) {
         int[] nums = {4,5,6};// 15/3 = 5
@@ -8,6 +7,5 @@ public class task_4_2 {
             result += m;
     }
     System.out.println("Значение среднего арифметического = "+ result/nums.length);
-
     }
 }
