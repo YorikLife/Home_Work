@@ -1,4 +1,4 @@
-package Home_Work2.arrays;
+package Home_Work_2.arrays;
 
 import static Home_Work2.utils.ArraysUtils.arrayFromConsole;
 

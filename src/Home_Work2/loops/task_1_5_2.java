@@ -1,4 +1,4 @@
-package Home_Work2.loops;
+package Home_Work_2.loops;
 import java.util.Random;
 public class task_1_5_2 {
     public static void main(String[] args) {

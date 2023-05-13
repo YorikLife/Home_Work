@@ -1,4 +1,4 @@
-package Home_Work2.loops;
+package Home_Work_2.loops;
 
 public class task_1_6 {
     public static void main(String[] args) {

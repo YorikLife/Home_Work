@@ -1,4 +1,4 @@
-package Home_Work2.loops;
+package Home_Work_2.loops;
 import java.util.Scanner;
 public class task_1_2 {
     private static int n;
