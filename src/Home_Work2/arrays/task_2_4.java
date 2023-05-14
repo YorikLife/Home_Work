@@ -1,6 +1,6 @@
 package Home_Work_2.arrays;
 
-import static Home_Work2.utils.ArraysUtils.arrayRandom;
+import static Home_Work_2.utils.ArraysUtils.arrayRandom;
 public class task_2_4 {
     public static void main(String[] args) {
         int[] container = arrayRandom(5, 100);
