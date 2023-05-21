@@ -6,8 +6,8 @@ public class CalculatorWithCounterClassic extends CalculatorWithMathExtends {
    public long count = 0;
    public void incrementCountOperation() {
         count++;
-    }
+   }
    public long getCountOperation () {
         return count;
-    }
+   }
 }

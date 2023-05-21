@@ -5,7 +5,7 @@ import Home_Work3.calcs.simple.CalculatorWithMathExtends;
 public class CalculatorWithCounterAutoSuper extends CalculatorWithMathExtends {
 
     public long countOperations = 0;
-    public void incrementCountOperations(){
+    public void incrementCountOperations() {
         countOperations++;
     }
     public long getcountOperations () {

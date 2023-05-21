@@ -46,7 +46,7 @@ public class CalculatorWithCounterAutoComposite {
 
         public long getCounts() {
             return this.counts;
-    }
+        }
 }
 
 
