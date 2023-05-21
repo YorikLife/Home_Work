@@ -41,7 +41,7 @@ public class task_2_4 {
         md = sum / container.length;
         for (int i = 0; i < container.length; i++) {
             if (container[i] < md) {
-                System.out.println(container[i] + " ");
+        System.out.println(container[i] + " ");
             }
         }
         System.out.println();

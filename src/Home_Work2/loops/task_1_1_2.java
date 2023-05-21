@@ -6,7 +6,6 @@ public class task_1_1_2 {
                 return n*fact(n-1);// recursive call: method calling itself;
             }
         }
-
     public static void main(String[] args) {
         System.out.println(" Enter the number : ");
         Scanner scan = new Scanner(System.in);

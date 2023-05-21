@@ -15,8 +15,8 @@ public class SortsUtils {
             }
         }
         for (int i = 0; i < arr.length; i++) {
+        }
     }
-}
 /*
 4.1.2.
  Данный метод будет сортировать переданный ему массив при помощи алгоритма шейкерная сортировка.
@@ -47,6 +47,6 @@ public class SortsUtils {
             }
         }
         low = last + 1;
-        }
+    }
     }
 }

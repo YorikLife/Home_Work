@@ -9,5 +9,4 @@ public class task_2_1_1_1 {
         int [] container = arrayFromConsole();
         System.out.println(Arrays.toString(container));
     }
-
 }

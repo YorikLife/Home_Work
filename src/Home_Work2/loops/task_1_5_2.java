@@ -6,9 +6,7 @@ public class task_1_5_2 {
         int Low = 1;
         int High = 1000;
         int digitsNumber = digits.nextInt(High - Low) + Low;
-
-        {
-            if (digitsNumber % 2 != 0)
+        if (digitsNumber % 2 != 0) {
                 digitsNumber = digitsNumber + 1;
             System.out.println(digitsNumber);
         }
