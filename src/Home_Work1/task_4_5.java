@@ -7,11 +7,17 @@ public class task_4_5 {
         long b = keyboard.nextByte();
         byte code = (byte) b;
         System.out.println((char) code);
-        if (b > 0 && b < 65 ) {  // промежуток с 0-65.
+        if (b > 0 && b < 65) {  // промежуток с 0-65.
             System.out.println("Данное значение - не является буквой ");
-        } else
-        if (b > 64 && b < 91 ) { // промежуток с 65 до 90.
+        } else if (b > 64 && b < 91) { // промежуток с 65 до 90.
             System.out.println("Данное значение является буквой");
-            }
         }
     }
+    public static char charCode(char b) {
+      if (b > 0 && b < 65) {
+      } else if (b > 64 && b < 91) {
+          return b;
+      }
+        return b;
+    }
+}

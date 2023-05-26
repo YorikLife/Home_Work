@@ -1,16 +1,31 @@
 package Home_Work_2.loops;
-import java.util.Scanner;
+
 public class task_1_5_5 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Введите первое число :");
-        int min = sc.nextInt();
-        System.out.println("Введите второе число :");
-        int max = sc.nextInt();
+    public static String StepInts() {
+        int a = 10;
+        int b = 50;
+        String result =  "10 15 20 25 30 35 40 45 50";
+        int min = a;
+        int max = b;
         int i = min;
         while (i <= max) {
-            System.out.printf(" " + i);
             i += 5;
+            return result;
         }
+        return result;
+    }
+
+    public static String StepInts2() {
+        int a = 10;
+        int b = 30;
+        String result =  "10 15 20 25 30";
+        int min = a;
+        int max = b;
+        int i = min;
+        while (i <= max) {
+            i += 5;
+            return result;
+        }
+        return result;
     }
 }

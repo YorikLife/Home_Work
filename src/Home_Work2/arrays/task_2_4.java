@@ -12,42 +12,53 @@ public class task_2_4 {
         arr2_4_6(container);
     }
 
-    public static void arr2_4_1(int[] container) {
+    public static int arr2_4_1(int[] container) {
         int a = 0;
         for (int i = 0; i < container.length; i++) {
             if ((container[i] % 2 == 0) && container[i] >= 0) {
                 a += container[i];
             }
         }
-        System.out.println("Сумма четных положительных элементов массива :" + a);
+        System.out.println("Сумма четных положительных элементов массива : " + a);
+        return a;
     }
 
-    public static void arr2_4_2(int[] container) {
+    public static int arr2_4_2(int[] container) {
         int max = 0;
         for (int i = 0; i < container.length; i += 2) {
-            if (container[i] > container[max]) {
-                max = i;
+            if (container[i] > max) {
+                max = container[i];
             }
         }
-        System.out.println("Максимальный из элементов массива с четным индексом :" + max);
+        System.out.println("Максимальный из элементов массива с четным индексом : " + max);
+        return max;
     }
 
-    public static void arr2_4_3(int[] container) {
+    public static int[] arr2_4_3(int[] container) {
         int sum = 0;
-        int md = 0;
-        for (int j : container) {
-            sum += j;
-        }
-        md = sum / container.length;
+        double avr = 0;
+        int m = 0;
         for (int i = 0; i < container.length; i++) {
-            if (container[i] < md) {
-        System.out.println(container[i] + " ");
+            sum += container[i];
+        }
+        avr = (double) sum / container.length;
+        for (int i = 0; i < container.length; i++) {
+            if (container[i] < avr ) {
+                m++;
             }
         }
-        System.out.println();
+        int[] arr1 = new int[m];
+        int j = 0;
+        for (int i = 0; i < container.length; i++) {
+            if (container[i] < avr ) {
+            arr1[j] = container[i];
+            j++;
+            }
+        }
+        return arr1;
     }
 
-    public static void arr2_4_4(int[] container) {
+    public static int arr2_4_4(int[] container) {
         int min = Integer.MAX_VALUE;
         int min2 = Integer.MAX_VALUE;
         for (int i = 0; i < container.length; i++) {
@@ -64,9 +75,10 @@ public class task_2_4 {
             System.out.println("Второго по минимальности элемента нет ");
         }
         System.out.println("Минимальный элемент в массиве :" + min);
+        return min + min2;
     }
 
-    public static void arr2_4_5(int[] container) {
+    public static int[] arr2_4_5(int[] container) {
         int containerLength = container.length;
         int[] exArray = new int[containerLength];
         int rem = 0;
@@ -78,14 +90,12 @@ public class task_2_4 {
                 rem += 1;
             }
             for (int g : exArray) {
-                System.out.print(g + " ");
-
-                System.out.println(a + " " + b);
             }
         }
+        return exArray;
     }
 
-    public static void arr2_4_6(int[] container) {
+    public static int[] arr2_4_6(int[] container) {
         int sum = 0;
         for (int i = 0; i < container.length; i++) {
             int b = container[i];
@@ -94,6 +104,7 @@ public class task_2_4 {
             sum += container[i];
         }
         System.out.println(sum);
+        return new int[]{sum};
     }
 }
 

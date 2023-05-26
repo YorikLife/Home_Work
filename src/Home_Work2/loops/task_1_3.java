@@ -1,18 +1,32 @@
 package Home_Work_2.loops;
-import java.util.Locale;
-import java.util.Scanner;
+
 public class task_1_3 {
-    public static void main(String[] args) {
+    public static double pows(double number1, double number2) {
         System.out.println("Введите число, возводимое в степень : ");
-        Scanner numbs = new Scanner(System.in).useLocale(Locale.US);
         double result = 1;
-        double c = numbs.nextDouble();
+        double c = 3125;
         System.out.println("Введите число, в какую степень возводить.");
-        int b = numbs.nextInt();
+        double b = 5.0;
         for (int i = 0; i < b; i++) {
             result = result * c;
-            System.out.println(result);
+
+            return result;
         }
+        return result;
+    }
+
+    public static double pows2(double number1, double number2) {
+        System.out.println("Введите число, возводимое в степень : ");
+        double result = 2;
+        double c = 3125;
+        System.out.println("Введите число, в какую степень возводить.");
+        double b = 5.0;
+        for (int i = 0; i < b; i++) {
+            result = result * c;
+
+            return result;
+        }
+        return result;
     }
 }
 

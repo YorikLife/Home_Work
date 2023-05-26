@@ -6,6 +6,8 @@ public class task_4_4 {
         Scanner keyboard = new Scanner(System.in);
         int x = (keyboard.nextInt() * 1024);
         System.out.println(x + " = значение числа из байтов в килобайты ");
-
+    }
+    public static int bytes(int x, int y) {
+        return x * y;
     }
 }
