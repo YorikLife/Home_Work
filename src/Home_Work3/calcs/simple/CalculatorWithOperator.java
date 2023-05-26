@@ -25,9 +25,11 @@ public class CalculatorWithOperator implements ICalculator {
     }
 
     public double exponential(double a, double b) {
-        double result = 0;
-        for (int i = 0; i < b; i++) {
-            result *= a;
+        double result = a;
+        for (int i = 1; i < b; i++) {
+            if (b != 1) {
+                result *= a;
+            }
         }
             return result;
     }
