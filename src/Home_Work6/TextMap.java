@@ -11,6 +11,9 @@ import static Home_Work6.TextSet.readFile;
 
 public class TextMap {
     public static void main(String[] args) {
+        /**
+         * Задание 2.2
+         */
         System.out.println("Задайте значение 'N': ");
         Scanner values = new Scanner(System.in);
         int n = values.nextInt();
@@ -37,6 +40,9 @@ public class TextMap {
                 Map.Entry<String, Integer> wordList = Words.get(i);
                 System.out.println("Слово (" + wordList.getKey() + ") встречается " + wordList.getValue() + " раз.");
             }
+            /**
+             * Задание 5.1
+             */
             System.out.println();
             System.out.println("Поиск повторений слов :\"война\", \"и\", \"мир\" ");
             System.out.println();
@@ -44,6 +50,17 @@ public class TextMap {
             List<String> WordsLook = Arrays.asList("война", "и", "мир");
             for (String word : WordsLook) {
                 long counts = Looking.search(book.toString(), word);
+                System.out.println("Слово (" + word + ") встречается " + counts + " раз");
+            }
+            /**
+             * Задание 5.2
+             */
+            System.out.println("Поиск повторений слов :\"война\", \"и\", \"мир\" ");
+            System.out.println();
+            ISearchEngine Looking2 = new SearchEngineWithoutRegister(new RegExSearch());
+            List<String> WordsLook2 = Arrays.asList("война", "и", "мир");
+            for (String word : WordsLook2) {
+                long counts = Looking2.search(book.toString(), word);
                 System.out.println("Слово (" + word + ") встречается " + counts + " раз");
             }
         }
