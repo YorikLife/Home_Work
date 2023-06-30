@@ -68,7 +68,7 @@ public class BooksSearch {
                 }
                 if (selectValue.equals("нет")) {
                     try {
-                } catch (RuntimeException e) {
+                    } catch (RuntimeException e) {
                     throw new RuntimeException(e);
                 }
                     System.out.println("До скорых встреч!");
