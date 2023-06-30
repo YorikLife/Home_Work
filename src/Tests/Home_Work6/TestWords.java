@@ -1,7 +1,8 @@
 package Tests.Home_Work6;
 
+import Home_Work6.*;
 import Home_Work6.Api.ISearchEngine;
-import Home_Work6.EasySearch;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -56,5 +57,53 @@ public class TestWords {
         long actual = LookingForWords.search(text, "блииин");
         long expected = 1;
         assertEquals(expected, actual);
+    }
+    @Test
+    public void test7() {
+        ISearchEngine Looks = new RegExSearch();
+        String text = "мама рама буря";
+        long actual = Looks.search(text, "буря");
+        long expected = 1;
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    public void test8() {
+        ISearchEngine Looks = new RegExSearch();
+        String text = "Мама мыла раму";
+        long actual = Looks.search(text , "раму");
+        long expected = 1;
+        Assertions.assertEquals(expected , actual);
+    }
+    @Test
+    public void test9() {
+        ISearchEngine Looks = new RegExSearch();
+        String text = "Мама мыла раму, Рама МЫЛИ Маму";
+        long actual = Looks.search(text , "МЫЛИ");
+        long expected = 1;
+        Assertions.assertEquals(expected , actual);
+    }
+    @Test
+    public void test10() {
+        ISearchEngine Looks = new SearchEnginePunctuationNormalizer(new RegExSearch());
+        String text = "Мама мыла раму, Раму МЫЛИ Маме";
+        long actual = Looks.search(text , "Маме");
+        long expected = 1;
+        Assertions.assertEquals(expected , actual);
+    }
+    @Test
+    public void test11() {
+        ISearchEngine Looks = new SearchEngineWithoutRegister(new RegExSearch());
+        String text = "Мама мыла раму, Раму МЫЛИ Маме";
+        long actual = Looks.search(text , "мыли");
+        long expected = 1;
+        Assertions.assertEquals(expected , actual);
+    }
+    @Test
+    public void test12() {
+        ISearchEngine Looks = new SearchEngineCaseNormalizer(new RegExSearch());
+        String text = "бабушками бабушкаю бабушках";
+        long actual = Looks.search(text , "бабушка");
+        long expected = 3;
+        Assertions.assertEquals(expected , actual);
     }
 }
