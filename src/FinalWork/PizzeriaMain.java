@@ -18,5 +18,5 @@ public class PizzeriaMain {
 
                     System.out.println("Повторите запрос, произошла ошибка");
 
-        }
     }
+}
